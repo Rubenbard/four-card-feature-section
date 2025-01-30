@@ -1,0 +1,104 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default styles */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-width: var(--min-viewport-width);
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+    background-color: var(--color-very-light-gray);
+}
+
+main{
+    min-height: 100vh;
+    
+    background-color: var(--color-very-light-gray);
+    max-width: 100%;
+    overflow-x: hidden;
+}   
+
+.container{
+    width: 23.438rem; /* 375px */
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-inline: 2rem;
+    display: grid;
+    place-items: center;         
+    grid-template-columns: 1fr;
+}
+
+.title{
+    text-align: center;
+}
+
+.card{
+    background-color: rgb(214, 152, 152);
+    padding: 1.5rem;
+    height: 13.875rem; /* 222px */
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 48rem) { /* 768px */
+    .container{
+        width: 69.375rem; /* 1110px */
+        max-width: 100%;
+    }
+
+    .card{
+        width: 21.875rem; /* 350px */
+        background-color: rgb(200, 186, 214);
+        height: 15.625rem; /* 250px */
+    }
+
+    .title{
+        width: 33.75rem ;
+    }
+
+    .title h1{
+        font-size: var(--font-size-title-desktop);
+    }
+}

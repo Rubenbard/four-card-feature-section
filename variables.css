@@ -1,0 +1,99 @@
+:root {
+  /* Colors - Primary */
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  /* Colors - Neutral */
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+
+  /* Typography */
+  --font-family-primary: 'Poppins', sans-serif;
+  --font-size-body: 0.813rem;
+  --font-size-title: 1.5rem;
+  --font-size-card-title: 1.25rem;
+  --font-size-subtitle: 0.938rem;
+
+
+  --font-lh-body: 1.438rem;
+  --font-lh-title: auto;
+  --font-lh-card-title: auto;
+  --font-lh-subtitle: 1.563rem;
+
+  /* Font Weights */
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* Breakpoints */
+  --mobile: 375px;
+  --desktop: 1440px;
+} 
+
+.supervisor{
+    border-top: 0.375rem solid var(--color-red);
+}
+
+.team-builder{
+    border-top: 0.375rem solid var(--color-cyan);
+}
+
+.karma{
+    border-top: 0.375rem solid var(--color-orange);
+}
+
+.calculator{
+    border-top: 0.375rem solid var(--color-blue);
+}
+
+
+.font-title-bold {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: var(--font-size-title);
+    letter-spacing: 0.17px;
+    line-height: var(--font-lh-title);
+    color: var(--color-very-dark-blue);
+}
+
+.font-title-light {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    font-size: var(--font-size-title);
+    letter-spacing: 0.17px;
+    line-height: var(--font-lh-title);
+    color: var(--color-grayish-blue);
+  }
+
+  .font-subtitle {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    font-size: var(--font-size-subtitle);
+    letter-spacing: 0.1px;
+    line-height: var(--font-lh-subtitle);
+    color: var(--color-grayish-blue);
+  }
+  
+.font-title-card {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    font-size: var(--font-size-card-title);
+    line-height: var(--font-lh-card-title);
+    color: var(--color-very-dark-blue);
+  }
+  
+.font-p {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    font-size: var(--font-size-body);
+    line-height: var(--font-lh-body);
+    color: var(--color-grayish-blue);
+  }
