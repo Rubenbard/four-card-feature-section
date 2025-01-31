@@ -51,26 +51,6 @@
 }
 
 
-.font-title-bold {
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-semibold);
-    font-style: normal;
-    font-size: var(--font-size-title);
-    letter-spacing: 0.17px;
-    line-height: var(--font-lh-title);
-    color: var(--color-very-dark-blue);
-}
-
-.font-title-light {
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-light);
-    font-style: normal;
-    font-size: var(--font-size-title);
-    letter-spacing: 0.17px;
-    line-height: var(--font-lh-title);
-    color: var(--color-grayish-blue);
-  }
-
   .font-subtitle {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-light);
