@@ -55,7 +55,8 @@ body{
 
 main{
     min-height: 100vh;
-    
+    display: grid;
+    place-items: center;
     background-color: var(--color-very-light-gray);
     max-width: 100%;
     overflow-x: hidden;
@@ -64,41 +65,96 @@ main{
 .container{
     width: 23.438rem; /* 375px */
     max-width: 100%;
-    overflow-x: hidden;
-    padding-inline: 2rem;
     display: grid;
     place-items: center;         
     grid-template-columns: 1fr;
+    gap: 1.875rem;
+    padding: 1rem;
 }
 
 .title{
     text-align: center;
 }
 
+.title h1{
+    font-size: var(--font-size-title);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    letter-spacing: 0.17px;
+    line-height: var(--font-lh-title);
+    color: var(--color-grayish-blue);
+}
+
+.title h2{
+    font-size: var(--font-size-title);
+}
+
 .card{
-    background-color: rgb(214, 152, 152);
-    padding: 1.5rem;
+    background-color: var(--color-white);
+    padding: 1.7rem;
+    width: 100%;
     height: 13.875rem; /* 222px */
     border-radius: 0.5rem;
+box-shadow: 3px 13px 28px -3px rgba(223,228,242,1);
+display: flex;
+flex-direction: column;
+}
+
+.card p{
+    margin-bottom: auto;
+}
+
+.icon{
+    align-self: flex-end;
 }
 
 @media (min-width: 48rem) { /* 768px */
     .container{
         width: 69.375rem; /* 1110px */
         max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+        height:46.875rem; /* 530px */
     }
+
 
     .card{
         width: 21.875rem; /* 350px */
-        background-color: rgb(200, 186, 214);
         height: 15.625rem; /* 250px */
     }
 
+    .card.supervisor{
+        grid-area: 3 / 1 / 5 / 2;
+    }
+
+    .card.team-builder{
+        grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .card.karma{
+        grid-area: 4 / 2 / 6 / 3;
+    }
+
+    .card.calculator{
+        grid-area: 3 / 3 / 5 / 4;
+    }
+
     .title{
+        grid-area: 1 / 1 / 2 / 4; 
         width: 33.75rem ;
+        height: 10.625rem; /* 170px */
     }
 
     .title h1{
+        font-size: var(--font-size-title-desktop);
+    }
+
+    .title h2{
         font-size: var(--font-size-title-desktop);
     }
 }
