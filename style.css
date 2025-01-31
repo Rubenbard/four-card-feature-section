@@ -109,10 +109,9 @@ flex-direction: column;
     align-self: flex-end;
 }
 
-@media (min-width: 48rem) { /* 768px */
+@media (min-width: 69.375rem) { /* 1110px */
     .container{
         width: 69.375rem; /* 1110px */
-        max-width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -146,6 +145,56 @@ flex-direction: column;
 
     .title{
         grid-area: 1 / 1 / 2 / 4; 
+        width: 33.75rem ;
+        height: 10.625rem; /* 170px */
+    }
+
+    .title h1{
+        font-size: var(--font-size-title-desktop);
+    }
+
+    .title h2{
+        font-size: var(--font-size-title-desktop);
+    }
+}
+
+@media (min-width: 48rem) and (max-width: 69.375rem) { /* 768px */
+    .container{
+        width: 48rem; /* 768px */
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 32px;
+grid-row-gap: 32px;
+        /*height:46.875rem; /* 530px */
+    }
+
+
+    .card{
+        width: 21.875rem; /* 350px */
+        height: 15.625rem; /* 250px */
+    }
+
+    .card.supervisor{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .card.team-builder{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .card.karma{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .card.calculator{
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .title{
+        grid-area: 1 / 1 / 2 / 3; 
         width: 33.75rem ;
         height: 10.625rem; /* 170px */
     }
